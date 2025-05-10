@@ -26,6 +26,8 @@ for /d %%d in ("!sourceFolder!\app-*") do (
 
 if defined latestFolder (
     set "targetFolder=!backupFolder!\app-!latestVersion!"
+
+    :: Creating backup folders (necessary for mkdir to work as well)
     mkdir "!targetFolder!" >nul 2>&1
     mkdir "!targetFolder!\locales" >nul 2>&1
     mkdir "!targetFolder!\modules\discord_desktop_core-1\discord_desktop_core" >nul 2>&1
@@ -33,37 +35,37 @@ if defined latestFolder (
     mkdir "!targetFolder!\modules\discord_utils-1\discord_utils\node_modules" >nul 2>&1
     mkdir "!targetFolder!\modules\discord_voice-1\discord_voice" >nul 2>&1
 
-    :: Noise suppression by KRISP
+    :: Moving noise suppression by KRISP
     move "!latestFolder!\modules\discord_krisp" "!targetFolder!\modules" >nul 2>&1
     move "!latestFolder!\modules\discord_krisp-1" "!targetFolder!\modules" >nul 2>&1
 
-    :: Vulkan
+    :: Moving Vulkan
     move "!latestFolder!\vulkan-1.dll" "!targetFolder!" >nul 2>&1
 
-    :: Remove this line for "Better Discord" to work
+    :: Moving the chrome_*.pak files (if using Better Discord - delete the line.
     move "!latestFolder!\chrome_*.pak" "!targetFolder!" >nul 2>&1
 
-    :: Disabling game activity (Games from Discord)
+    :: Moving game activity (Games from Discord)
     move "!latestFolder!\Microsoft.Gaming.XboxApp.XboxNetwork.winmd" "!targetFolder!" >nul 2>&1
     move "!latestFolder!\modules\discord_game_utils" "!targetFolder!\modules" >nul 2>&1
     move "!latestFolder!\modules\discord_game_utils-1" "!targetFolder!\modules" >nul 2>&1
 
-    :: Overlay
+    :: Moving overlay
     move "!latestFolder!\modules\discord_desktop_overlay-1" "!targetFolder!\modules" >nul 2>&1
     move "!latestFolder!\modules\discord_hook-1" "!targetFolder!\modules" >nul 2>&1
     move "!latestFolder!\modules\discord_overlay2-1" "!targetFolder!\modules" >nul 2>&1
     move "!latestFolder!\modules\discord_overlay2-2" "!targetFolder!\modules" >nul 2>&1
 	
-    :: Notifications
+    :: Moving notifications
     move "!latestFolder!\modules\discord_notifications-1" "!targetFolder!\modules" >nul 2>&1
 
-    :: Cleaning module "voice"
+    :: Moving unnecessary submodules in the voice module
     move "!latestFolder!\modules\discord_voice-1\discord_voice\gpu_encoder_helper.exe" "!targetFolder!\modules\discord_voice-1\discord_voice" >nul 2>&1
     move "!latestFolder!\modules\discord_voice-1\discord_voice\node_modules" "!targetFolder!\modules\discord_voice-1\discord_voice" >nul 2>&1
     move "!latestFolder!\modules\discord_voice-1\discord_voice\selfie_segmentation.tflite" "!targetFolder!\modules\discord_voice-1\discord_voice" >nul 2>&1
     move "!latestFolder!\modules\discord_voice-1\discord_voice\selfie_segmentation_landscape.tflite" "!targetFolder!\modules\discord_voice-1\discord_voice" >nul 2>&1
 
-    :: Cleaning up unnecessary modules
+    :: Moving unnecessary modules
     move "!latestFolder!\modules\discord_cloudsync-1" "!targetFolder!\modules" >nul 2>&1
     move "!latestFolder!\modules\discord_dispatch-1" "!targetFolder!\modules" >nul 2>&1
     move "!latestFolder!\modules\discord_erlpack-1" "!targetFolder!\modules" >nul 2>&1
@@ -72,7 +74,7 @@ if defined latestFolder (
     move "!latestFolder!\modules\discord_spellcheck-1" "!targetFolder!\modules" >nul 2>&1
     move "!latestFolder!\modules\discord_zstd-1" "!targetFolder!\modules" >nul 2>&1
 
-    :: Various junk files
+    :: Moving various junk files
     move "!latestFolder!\app.ico" "!targetFolder!" >nul 2>&1
     move "!latestFolder!\d3dcompiler_47.dll" "!targetFolder!" >nul 2>&1
     move "!latestFolder!\Discord.exe.sig" "!targetFolder!" >nul 2>&1
@@ -104,7 +106,7 @@ if defined latestFolder (
         move /y "!latestFolder!\locales\%%l*.pak" "!targetFolder!\locales" >nul 2>&1
     )
 
-    :: Update Discord
+    :: Moving Update Discord
     move "%USERPROFILE%\AppData\Local\Discord\Update.exe" "%USERPROFILE%\AppData\Local\Discord\.backup" >nul 2>&1
 )
 
