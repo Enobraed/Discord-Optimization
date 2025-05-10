@@ -2,7 +2,7 @@
 
 <h2 align="center">RUS</h2>
 
-Скрипт Discord (Launcher).bat перемещает ненужные функции, которые не требуются большинству пользователей, в папку .backup для их последующего восстановления в случае возникновения проблем. Это позволит повысить производительность Discord.
+Скрипт Discord (Optimization).bat перемещает ненужные функции, которые не требуются большинству пользователей, в папку .backup для их последующего восстановления в случае возникновения проблем. Это позволит повысить производительность Discord.
 
 ### Функции
 1. Завершение процесса Discord.exe (Необходимо для оптимизации)
@@ -28,7 +28,7 @@
 
 ---
 <h2 align="center">ENG</h2>
-The Discord (Launcher).bat script moves unnecessary features that are not required by most users to the .backup folder to restore them later in case of problems. This will improve the performance of Discord.
+The Discord (Optimization).bat script moves unnecessary features that are not required by most users to the .backup folder to restore them later in case of problems. This will improve the performance of Discord.
 
 ### Functions
 1. Kill process Discord.exe (necessary for optimization)
