@@ -7,7 +7,7 @@
 2. Создание резервные папки (необходимо для того, чтобы mkdir тоже работал)
 3. Перемещение KRISP
 4. Перемещение Vulkan
-5. Перемещение файлов chrome_*.pak (если используется Better Discord - удалите строку.
+5. Перемещение файлов chrome_*.pak (если используется Better Discord - удалите строку)
 6. Перемещение игровой активности (Игры из Discord)
 7. Перемещение оверлея
 8. Перемещение уведомлений
@@ -41,7 +41,7 @@ The Discord (Optimization).bat script moves unnecessary features that are not re
 2. Creating backup folders (necessary for mkdir to work as well)
 3. Moving noise suppression by KRISP
 4. Moving Vulkan
-5. Moving the chrome_*.pak files (if using Better Discord - delete the line.
+5. Moving the chrome_*.pak files (if using Better Discord - delete the line)
 6. Moving game activity (Games from Discord)
 7. Moving overlay
 8. Moving notifications
