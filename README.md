@@ -1,7 +1,5 @@
-<h2 align="center">Discord (Optimization)</h2>
-
 <h2 align="center">RUS</h2>
-
+<h2 align="center">Discord (Optimization).bat</h2>
 Скрипт Discord (Optimization).bat перемещает ненужные функции, которые не требуются большинству пользователей, в папку .backup для их последующего восстановления в случае возникновения проблем. Это позволит повысить производительность Discord.
 
 ### Функции
@@ -26,8 +24,16 @@
 ### ВАЖНАЯ ИНФОРМАЦИЯ ПРО ОБНОВЛЕНИЯ
 При каждом обновлении Discord файлы и папки будут загружаться заново, поэтому необходимо будет повторно запукать Discord (Optimization).bat.
 
+<h2 align="center">Discord (Launcher).bat</h2>
+Скрипт Discord (Launcher).bat очищает временные файлы Discord и запускает его с нужными параметрами запуска на оптимизацию.
+
+### Инструкция по установке
+1. Скопировать/переместить Discord (Launcher).bat в корневую папку с Discord (%USERPROFILE%\AppData\Local\Discord)
+2. Запустить Discord (Launcher).bat
+3. Удалить старый ярлык Discord и создать новый - Discord (Launcher).bat
 ---
 <h2 align="center">ENG</h2>
+<h2 align="center">Discord (Optimization).bat</h2>
 The Discord (Optimization).bat script moves unnecessary features that are not required by most users to the .backup folder to restore them later in case of problems. This will improve the performance of Discord.
 
 ### Functions
@@ -51,3 +57,11 @@ The Discord (Optimization).bat script moves unnecessary features that are not re
 
 ### IMPORTANT UPDATE INFORMATION
 Each time Discord is updated, the files and folders will be re-uploaded, so you will need to re-run Discord (Optimization).bat.
+
+<h2 align="center">Discord (Launcher).bat</h2>
+The Discord (Launcher).bat script clears Discord's temporary files and launches it with the desired startup parameters for optimization.
+
+### Installation Instructions
+1. Copy/move Discord (Launcher).bat to the root folder with Discord (%USERPROFILE%\AppData\Local\Discord).
+2. Run Discord (Launcher).bat
+3. Delete the old Discord shortcut and create a new one - Discord (Launcher).bat
