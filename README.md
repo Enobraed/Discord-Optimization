@@ -17,18 +17,18 @@
 12. Перемещение Update Discord
 
 ### Инструкция по установке
-1. Скопировать/переместить Discord (Optimization).bat в корневую папку с Discord (%USERPROFILE%\AppData\Local\Discord)
+1. Скопировать/переместить Discord (Optimization).bat в корневую папку с Discord `%USERPROFILE%\AppData\Local\Discord`
 2. Запустить Discord (Optimization).bat
 3. Проверить размер папки .backup. Если он меньше, чем 243 МБ, то попробуйте перезапустить Discord (Optimization).bat
 
 ### ВАЖНАЯ ИНФОРМАЦИЯ ПРО ОБНОВЛЕНИЯ
-При каждом обновлении Discord файлы и папки будут загружаться заново, поэтому необходимо будет повторно запукать Discord (Optimization).bat.
+При каждом обновлении Discord, файлы и папки будут загружаться заново, поэтому необходимо будет повторно запускать Discord (Optimization).bat.
 
 <h2 align="center">Discord (Launcher).bat</h2>
 Скрипт Discord (Launcher).bat очищает временные файлы Discord и запускает его с нужными параметрами запуска на оптимизацию.
 
 ### Инструкция по установке
-1. Скопировать/переместить Discord (Launcher).bat в корневую папку с Discord (%USERPROFILE%\AppData\Local\Discord)
+1. Скопировать/переместить Discord (Launcher).bat в корневую папку с Discord `%USERPROFILE%\AppData\Local\Discord`
 2. Запустить Discord (Launcher).bat
 3. Удалить старый ярлык Discord и создать новый - Discord (Launcher).bat
 ---
@@ -51,7 +51,7 @@ The Discord (Optimization).bat script moves unnecessary features that are not re
 12. Moving Update Discord
 
 ### Installation Instructions
-1. Copy/move Discord (Optimization).bat to the root folder with Discord (%USERPROFILE%\AppData\Local\Discord).
+1. Copy/move Discord (Optimization).bat to the root folder with Discord `%USERPROFILE%\AppData\Local\Discord`.
 2. Run Discord (Optimization).bat
 3. Check the size of the .backup folder. If it is less than 243 MB, try restarting Discord (Optimization).bat.
 
@@ -62,6 +62,6 @@ Each time Discord is updated, the files and folders will be re-uploaded, so you 
 The Discord (Launcher).bat script clears Discord's temporary files and launches it with the desired startup parameters for optimization.
 
 ### Installation Instructions
-1. Copy/move Discord (Launcher).bat to the root folder with Discord (%USERPROFILE%\AppData\Local\Discord).
+1. Copy/move Discord (Launcher).bat to the root folder with Discord `%USERPROFILE%\AppData\Local\Discord`.
 2. Run Discord (Launcher).bat
 3. Delete the old Discord shortcut and create a new one - Discord (Launcher).bat
